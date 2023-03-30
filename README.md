@@ -42,6 +42,9 @@ The default path is run/detect/exp.
 
 For more information about the various options that yolov5 supports, see the yolov5 repository.  
 
+# result examples
+<img width='100%' src='https://user-images.githubusercontent.com/103990167/228797350-a0df1839-8514-41ae-bca3-b4283776e2d3.png'/>
+
 ---
 For the NIH Chest X-ray Dataset from which the Pneumonia Detection Challenge datasets were drawn:  
 • Provide a link to the NIH download site: https://nihcc.app.box.com/v/ChestXray-NIHCC  
