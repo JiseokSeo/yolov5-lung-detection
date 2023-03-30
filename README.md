@@ -1,46 +1,38 @@
 # yolov5-lung-detection
-A repository that shares the weights of object detection of the lungs in chest X-ray images and guides you through their use.  
-Weights was learned from the dataset from RSNA.  
-Source and Permission information is located at the bottom of the repository.  
+A repository that shares YOLOv5 object detection weights for detecting lungs in chest X-ray images and provides guidance on their usage. I trained the weights on a dataset derived from the RSNA Pneumonia Detection Challenge. Please refer to the bottom of the repository for source and permission information.
 
 # labeling  
-The dataset provided by the lowest permission information was obtained through the RSNA Pneumonia Detection Challenge of Kaggle.  
-After sampling 200 images for each label in the trainset of the data provided, I labeled the lungs as a nurse.  
-But I'm not a specialist in radiology, so you have to keep in mind that I can't be trusted academically.
+I obtained the dataset, provided with the lowest permission information, through the RSNA Pneumonia Detection Challenge hosted on Kaggle. I sampled 200 images for each label from the provided training set and annotated the lungs myself as a nurse. However, please note that the annotations may not be academically reliable, as I am not a radiology specialist.
 
-After changing the DICOM format to a png format of (1024*1024) size, the lungs were labeled using the 'Label-Studio' tool as shown below.  
-I checked the highest part of the upper lobe, the lowest part of the lower lobe, and the widest part of the lungs from side to side.  
+I converted the DICOM format to a 1024x1024 PNG format and used the 'Label-Studio' tool to annotate the lungs as shown below. I marked the highest part of the upper lobe, the lowest part of the lower lobe, and the widest part of the lungs from side to side.
 <img width='30%' src='https://user-images.githubusercontent.com/103990167/228791194-9aa3775f-0ac7-4c9c-a6bf-380e90e0d04b.png'/>
 
 # download weights
-You can download weights(lung_detection.pt) from the link below.  
+You can download the weights (lung_detection.pt) from the following link:
 https://drive.google.com/file/d/1zhCtjOd0c9LQwRBD1vIvaYpnJUI9-V8P/view?usp=share_link
 
 # how to use
-This weight was trained through YOLOv5, so you should clone the repository below.  
+This model is based on YOLOv5, so you should first clone the YOLOv5 repository:
 https://github.com/ultralytics/yolov5.git  
 
 ```
 $ git clone https://github.com/ultralytics/yolov5.git
 ```
 
-Download the weights.  
-The recommended paths are as follows.  
+Next, download the weights and place them in the recommended path:
 ```
 …/yolov5/models/lung_detection.pt
 ```
 
-You can use the following commands to perform lung detection.  
-See the yolov5 repository for more information.  
+You can now use the following command to perform lung detection. Refer to the YOLOv5 repository for more details:
 ```
 $ cd .../yolov5
 $ python detect.py --weight [weighs path] --source [object directory] --save-txt
 ```
 
-The result image and txt with bounding box coordinates are generated.  
-The default path is run/detect/exp.  
+This will generate result images and text files containing bounding box coordinates. The default output path is yolov5/run/detect/exp.
 
-For more information about the various options that yolov5 supports, see the yolov5 repository.  
+For more information on the various options supported by YOLOv5, see the YOLOv5 repository.
 
 # result examples
 <img width='100%' src='https://user-images.githubusercontent.com/103990167/228797350-a0df1839-8514-41ae-bca3-b4283776e2d3.png'/>
