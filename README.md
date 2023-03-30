@@ -3,13 +3,44 @@ A repository that shares the weights of object detection of the lungs in chest X
 Weights was learned from the dataset from RSNA.  
 Source and Permission information is located at the bottom of the repository.  
 
-# Training Data
+# labeling  
 The dataset provided by the lowest permission information was obtained through the RSNA Pneumonia Detection Challenge of Kaggle.  
-After sampling 200 images for each label in the trainset of the data provided, I labeled the lungs myself as a nurse.  
+After sampling 200 images for each label in the trainset of the data provided, I labeled the lungs as a nurse.  
 But I'm not a specialist in radiology, so you have to keep in mind that I can't be trusted academically.
 
-After changing the DICOM format to a png format of (1024*1024) size, the lungs were labeled using the label-studio tool as shown below.  
+After changing the DICOM format to a png format of (1024*1024) size, the lungs were labeled using the 'Label-Studio' tool as shown below.  
+I checked the highest part of the upper lobe, the lowest part of the lower lobe, and the widest part of the lungs from side to side.  
+<img width='30%' src='https://user-images.githubusercontent.com/103990167/228791194-9aa3775f-0ac7-4c9c-a6bf-380e90e0d04b.png'/>
 
+# download weights
+You can download weights(lung_detection.pt) from the link below.  
+https://drive.google.com/file/d/1-7Lyt3SDAUUt1acR9DeiLHPoCTk9ZOJI/view?usp=share_link
+
+# how to use
+This weight was trained through YOLOv5, so you should clone the repository below.  
+https://github.com/ultralytics/yolov5.git  
+
+```
+$ git clone https://github.com/ultralytics/yolov5.git
+```
+
+Download the weights.  
+The recommended paths are as follows.  
+```
+…/yolov5/models/lung_detection.pt
+```
+
+You can use the following commands to perform lung detection.  
+See the yolov5 repository for more information.  
+```
+$ cd .../yolov5
+$ python detect.py --weight [weighs path] --source [object directory] --save-txt
+```
+
+The result image and txt with bounding box coordinates are generated.  
+The default path is run/detect/exp.  
+
+For more information about the various options that yolov5 supports, see the yolov5 repository.  
 
 ---
 For the NIH Chest X-ray Dataset from which the Pneumonia Detection Challenge datasets were drawn:  
