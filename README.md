@@ -2,7 +2,7 @@
 A repository that shares YOLOv5 object detection weights for detecting lungs in chest X-ray images and provides guidance on their usage. I trained the weights on a dataset derived from the RSNA Pneumonia Detection Challenge. Please refer to the bottom of the repository for source and permission information.
 
 # labeling  
-I obtained the dataset, provided with the lowest permission information, through the RSNA Pneumonia Detection Challenge hosted on Kaggle. I sampled 200 images for each label from the provided training set and annotated the lungs myself as a nurse. However, please note that the annotations may not be academically reliable, as I am not a radiology specialist.
+I obtained the dataset, provided with the lowest permission information, through the RSNA Pneumonia Detection Challenge hosted on Kaggle. I sampled 200 images for each label (total 600) from the provided training set and annotated the lungs myself as a nurse. However, please note that the annotations may not be academically reliable, as I am not a radiology specialist.
 
 I converted the DICOM format to a 1024x1024 PNG format and used the 'Label-Studio' tool to annotate the lungs as shown below. I marked the highest part of the upper lobe, the lowest part of the lower lobe, and the widest part of the lungs from side to side.  
 <img width='30%' src='https://user-images.githubusercontent.com/103990167/228791194-9aa3775f-0ac7-4c9c-a6bf-380e90e0d04b.png'/>
