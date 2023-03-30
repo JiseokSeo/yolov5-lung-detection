@@ -14,7 +14,7 @@ I checked the highest part of the upper lobe, the lowest part of the lower lobe,
 
 # download weights
 You can download weights(lung_detection.pt) from the link below.  
-https://drive.google.com/file/d/1-7Lyt3SDAUUt1acR9DeiLHPoCTk9ZOJI/view?usp=share_link
+https://drive.google.com/file/d/1zhCtjOd0c9LQwRBD1vIvaYpnJUI9-V8P/view?usp=share_link
 
 # how to use
 This weight was trained through YOLOv5, so you should clone the repository below.  
