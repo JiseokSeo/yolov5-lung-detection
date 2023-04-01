@@ -35,7 +35,10 @@ This will generate result images and text files containing bounding box coordina
 For more information on the various options supported by YOLOv5, see the YOLOv5 repository.
 
 # result examples
-<img width='100%' src='https://user-images.githubusercontent.com/103990167/228797350-a0df1839-8514-41ae-bca3-b4283776e2d3.png'/>
+<img width='100%' src='https://user-images.githubusercontent.com/103990167/228797350-a0df1839-8514-41ae-bca3-b4283776e2d3.png'/>  
+
+# result-hard case
+<img width='100%' src='https://user-images.githubusercontent.com/103990167/229259338-162b0939-ea48-45d1-b66e-ea908b670765.png'/>
 
 ---
 For the NIH Chest X-ray Dataset from which the Pneumonia Detection Challenge datasets were drawn:  
