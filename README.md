@@ -9,7 +9,8 @@ I converted the DICOM format to a 1024x1024 PNG format and used the 'Label-Studi
 
 # download weights
 You can download the weights (lung_detection.pt) from the following link:
-https://drive.google.com/file/d/1zhCtjOd0c9LQwRBD1vIvaYpnJUI9-V8P/view?usp=share_link
+https://github.com/JiseokSeo/yolov5-lung-detection/releases  
+Or you can check releases tab.
 
 # how to use
 This model is based on YOLOv5, so you should first clone the YOLOv5 repository:
