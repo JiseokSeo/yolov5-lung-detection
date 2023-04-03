@@ -29,6 +29,11 @@ You can now use the following command to perform lung detection. Refer to the YO
 ```
 $ cd .../yolov5
 $ python detect.py --weight [weighs path] --source [object directory] --save-txt
+```  
+
+for example,
+```
+$ python detect.py --weight models/lung_detection.pt --source data/images --save-txt
 ```
 
 This will generate result images and text files containing bounding box coordinates. The default output path is yolov5/run/detect/exp.
